@@ -65,7 +65,7 @@ export default function Generator(props) {
             <Header index='02' title="Lock on targets" description="Select the muscles judged annihilation" />
             <div className="bg-slate-950 border border-blue-400 rounded-lg relative flex flex-col">
                 <button onClick={toggleModal} className="relative p-3 flex items-center justify-center">
-                    <p className="capitalize">{muscles.length == 0 ? 'Select muscle groups' : muscles.join(' & ')}</p>
+                    <p className="capitalize">{muscles.length == 0 ? 'Select muscle groups' : muscles.join(' / ')}</p>
                     <i className="fa-solid fa-caret-down absolute right-3 top-1\/2 -translate-y-1\/2"></i>
                 </button>
                 {showModal && (
